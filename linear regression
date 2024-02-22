@@ -48,3 +48,8 @@ print("predication for test set:{}".format(y_pred_slr))
 
 slr_diff=pd.DataFrame({'Actual value':y_test,'Predicated Value':y_pred_slr})
 slr_diff
+
+slr.predict([[56]])
+
+from sklearn.metrics import accuracy_score
+print('R squared value of the model: {:.2f}'.format(slr.score(x,y)*100))
