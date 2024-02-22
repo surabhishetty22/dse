@@ -45,3 +45,6 @@ plt.show()
 y_pred_slr=slr.predict(x_test)
 x_pred_slr=slr.predict(x_train)
 print("predication for test set:{}".format(y_pred_slr))
+
+slr_diff=pd.DataFrame({'Actual value':y_test,'Predicated Value':y_pred_slr})
+slr_diff
