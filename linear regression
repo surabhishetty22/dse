@@ -18,3 +18,6 @@ plt3=sns.boxplot(dataset['Radio'],ax=axs[2])
 plt.tight_layout()
 
 sns.distplot(dataset['Sales']);
+
+sns.pairplot(dataset,x_vars=['TV','Radio','Newspaper'],y_vars='Sales',height=4,aspect=1,kind='scatter')
+plt.show()
