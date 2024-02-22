@@ -41,3 +41,7 @@ print('Regression Equation sales=6.948+0.054*TV')
 plt.scatter(x_train,y_train)
 plt.plot(x_train,6.948+0.054*x_train,'r')
 plt.show()
+
+y_pred_slr=slr.predict(x_test)
+x_pred_slr=slr.predict(x_train)
+print("predication for test set:{}".format(y_pred_slr))
