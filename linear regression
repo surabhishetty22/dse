@@ -36,4 +36,4 @@ slr.fit(x_train,y_train)
 print('Intercept: ',slr.intercept_)
 print('Coefficient: ',slr.coef_)
 
-
+print('Regression Equation sales=6.948+0.054*TV')
