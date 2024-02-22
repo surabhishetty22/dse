@@ -37,3 +37,7 @@ print('Intercept: ',slr.intercept_)
 print('Coefficient: ',slr.coef_)
 
 print('Regression Equation sales=6.948+0.054*TV')
+
+plt.scatter(x_train,y_train)
+plt.plot(x_train,6.948+0.054*x_train,'r')
+plt.show()
